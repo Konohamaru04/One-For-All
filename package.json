@@ -1,0 +1,26 @@
+{
+  "name": "one-for-all",
+  "version": "1.0.0",
+  "description": "All in one tool",
+  "main": "index.js",
+  "dependencies": {
+    "electron": "^9.1.0",
+    "electron-builder": "^22.7.0",
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Konohamaru04/One-For-All.git"
+  },
+  "author": "Amartya Deshmukh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Konohamaru04/One-For-All/issues"
+  },
+  "homepage": "https://github.com/Konohamaru04/One-For-All#readme"
+}
