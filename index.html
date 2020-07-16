@@ -6,6 +6,7 @@
     <title id="title">One-For-All</title>
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/menu.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/preloader.css">
     <script src="js/fontAwesome.js" crossorigin="anonymous"></script>
     <script src="js/sidenavMenu.js"></script>
 </head>
@@ -36,14 +37,18 @@
         <a href="#" class="close" onclick="closeSlideMenu()">
             <i class="fas fa-times"></i>
         </a>
-        <a href="home.html" target="iframe_a">Home</a>
-        <a href="https://ytmp3.cc/en13/" target="iframe_a">YT to MP3/MP4</a>
-        <a href="#">Tool 2</a>
-        <a href="#">Tool 3</a>
+        <a href="home.html" target="iframe_a" id="F1" onclick="closeSlideMenu()">Home</a>
+        <a href="https://ytmp3.cc" target="iframe_a" id="F2" onclick="closeSlideMenu()">YT to MP3/MP4</a>
+        <a href="https://pdfcompressor.com" target="iframe_a" id="F3" onclick="closeSlideMenu()">PDF Compressor</a>
+        <a href="https://jpg2png.com" target="iframe_a" id="F4" onclick="closeSlideMenu()">JPEG to PNG</a>
+        <a href="https://png2jpg.com" target="iframe_a" id="F5" onclick="closeSlideMenu()">PNG to JPEG</a>
     </div>
         </main>
-        <iframe src="home.html" frameborder="0" height="100%" width="100%" name="iframe_a" style="border:none;"></iframe>
-    </div>
+        <iframe src="home.html" frameborder="0" height="100%" width="100%" name="iframe_a" style="border:none;" id="iframe1"></iframe>
+        <div id="preloader">
+            <div id="loader"></div>
+        </div>
+    
     <div class="bottom">
         <p id="devName"></p>
     </div>
@@ -57,5 +62,6 @@ var devName = "Amartya Deshmukh";
 document.getElementById('devName').innerHTML = devName;
     </script>
     <script src="js/menuHandler.js"></script>
+    <script src="js/preloader.js"></script>
 </body>
 </html>

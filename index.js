@@ -15,7 +15,7 @@ function createWindow(){
         }
     });
 
-    win.openDevTools();
+    //win.openDevTools();
 
     win.loadURL(url.format({
         pathname: path.join(__dirname, 'index.html'),
